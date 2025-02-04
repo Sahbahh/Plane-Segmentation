@@ -1,18 +1,18 @@
 # Plane-Segmentation
 This project explores **object detection, semantic segmentation, and instance segmentation** using **Detectron2** and **PyTorch**. The goal is to detect planes in aerial images and generate segmentation masks for each detected plane. The dataset used is a modified version of **iSAID**, which contains high-resolution satellite images.
 
-## Features
+## 🚀 Features
 - **Object Detection**: Utilized **Faster R-CNN** with **ResNet-101 FPN** to detect planes.
 - **Semantic Segmentation**: Implemented a **U-Net-based architecture** to generate segmentation masks.
 - **Instance Segmentation**: Combined object detection and segmentation results to create **per-instance masks**.
 - **Mask R-CNN**: Compared performance with a **Mask R-CNN model from Detectron2**.
 
-## Dataset
+## 🗂️ Dataset
 - **Source**: iSAID dataset (custom train/test split)
 - **Labels**: Bounding boxes and segmentation masks for planes
 - **Preprocessing**: Images cropped into smaller sections for improved detection accuracy
 
-## Model Architectures & Hyperparameters
+## 🔧 Model Architectures & Hyperparameters
 ### Object Detection:
 - **Backbone**: ResNet-101 with FPN
 - **Pretrained Model**: COCO-Detection Faster R-CNN R101 FPN 3x
@@ -36,7 +36,7 @@ This project explores **object detection, semantic segmentation, and instance se
 - Compared performance with **Mask R-CNN**
 - **Best Kaggle Score**: **53% Dice Coefficient**
 
-## Results & Performance
+## 🎯 Results & Performance
 - **Object Detection AP@0.50**: ~0.25 (Baseline)
 - **Best Mean IoU (Segmentation)**: **0.81**
 - **Kaggle Leaderboard Score (Instance Segmentation)**: **53%**
@@ -44,7 +44,7 @@ This project explores **object detection, semantic segmentation, and instance se
   - **Custom pipeline (Part 3)**: Higher flexibility and customization
   - **Mask R-CNN (Part 4)**: Faster and more reliable, but slightly lower IoU
 
-## Results
+## 📸 Visualization 
 
 ### Object Detection:
 ![Detection Sample](images/result1.png)
@@ -60,6 +60,6 @@ This project explores **object detection, semantic segmentation, and instance se
 ![Masl_RCNN](images/RCNN2.png)
 ![Masl_RCNN](images/RCNN3.png)
 
-## Acknowledgments
+## 📚 Acknowledgments
 This project was developed as part of CMPT412 at SFU.
    
